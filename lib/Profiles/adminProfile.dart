@@ -26,7 +26,6 @@ class _MyHomePageState extends State<MyHomePage> {
   String okulNo = '123456789';
   String sinif = '12. Sınıf';
   String bolum = 'Bilgisayar Mühendisliği';
-  String fakulte = "Teknoloji Fakültesi";
 
   @override
   Widget build(BuildContext context) {
@@ -84,15 +83,6 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                         TextField(
                           decoration: InputDecoration(
-                            labelText: 'Fakülte',
-                          ),
-                          controller: TextEditingController(text: fakulte),
-                          onChanged: (value) {
-                            fakulte = value;
-                          },
-                        ),
-                        TextField(
-                          decoration: InputDecoration(
                             labelText: 'Bölüm',
                           ),
                           controller: TextEditingController(text: bolum),
@@ -118,7 +108,6 @@ class _MyHomePageState extends State<MyHomePage> {
                             okulNo = okulNo;
                             sinif = sinif;
                             bolum = bolum;
-                            fakulte = fakulte;
                           });
                           Navigator.of(context).pop();
                         },
@@ -148,10 +137,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ListTile(
             title: Text('Sınıf'),
             subtitle: Text(sinif),
-          ),
-          ListTile(
-            title: Text('Fakülte'),
-            subtitle: Text(fakulte),
           ),
           ListTile(
             title: Text('Bölüm'),

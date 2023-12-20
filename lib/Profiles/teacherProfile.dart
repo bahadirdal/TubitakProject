@@ -23,10 +23,9 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   String isim = 'Murat Yılmaz';
   String soyisim = 'Yılmaz';
-  String okulNo = '123456789';
-  String sinif = '12. Sınıf';
   String bolum = 'Bilgisayar Mühendisliği';
   String fakulte = "Teknoloji Fakültesi";
+  String ders = "Algoritma Programlama";
 
   @override
   Widget build(BuildContext context) {
@@ -66,27 +65,9 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                         TextField(
                           decoration: InputDecoration(
-                            labelText: 'Okul Numarası',
-                          ),
-                          controller: TextEditingController(text: okulNo),
-                          onChanged: (value) {
-                            okulNo = value;
-                          },
-                        ),
-                        TextField(
-                          decoration: InputDecoration(
-                            labelText: 'Sınıf',
-                          ),
-                          controller: TextEditingController(text: sinif),
-                          onChanged: (value) {
-                            sinif = value;
-                          },
-                        ),
-                        TextField(
-                          decoration: InputDecoration(
                             labelText: 'Fakülte',
                           ),
-                          controller: TextEditingController(text: fakulte),
+                          controller: TextEditingController(text: soyisim),
                           onChanged: (value) {
                             fakulte = value;
                           },
@@ -98,6 +79,15 @@ class _MyHomePageState extends State<MyHomePage> {
                           controller: TextEditingController(text: bolum),
                           onChanged: (value) {
                             bolum = value;
+                          },
+                        ),
+                        TextField(
+                          decoration: InputDecoration(
+                            labelText: 'Ders',
+                          ),
+                          controller: TextEditingController(text: ders),
+                          onChanged: (value) {
+                            ders = value;
                           },
                         ),
                       ],
@@ -115,10 +105,9 @@ class _MyHomePageState extends State<MyHomePage> {
                           setState(() {
                             isim = isim;
                             soyisim = soyisim;
-                            okulNo = okulNo;
-                            sinif = sinif;
-                            bolum = bolum;
                             fakulte = fakulte;
+                            bolum = bolum;
+                            ders = ders;
                           });
                           Navigator.of(context).pop();
                         },
@@ -142,20 +131,16 @@ class _MyHomePageState extends State<MyHomePage> {
             subtitle: Text(soyisim),
           ),
           ListTile(
-            title: Text('Okul Numarası'),
-            subtitle: Text(okulNo),
-          ),
-          ListTile(
-            title: Text('Sınıf'),
-            subtitle: Text(sinif),
-          ),
-          ListTile(
             title: Text('Fakülte'),
             subtitle: Text(fakulte),
           ),
           ListTile(
             title: Text('Bölüm'),
             subtitle: Text(bolum),
+          ),
+          ListTile(
+            title: Text('Ders'),
+            subtitle: Text(ders),
           ),
         ],
       ),
