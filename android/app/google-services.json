@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1053289882661",
+    "firebase_url": "https://tubitakprojectdb-default-rtdb.firebaseio.com",
+    "project_id": "tubitakprojectdb",
+    "storage_bucket": "tubitakprojectdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053289882661:android:1b29561a96ec14582f4bcc",
+        "android_client_info": {
+          "package_name": "com.example.tubitakproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3Hwq7tdcqtsnuwf1AARDS7zcBSeUjJIQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
